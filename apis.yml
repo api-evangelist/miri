@@ -1,8 +1,29 @@
 aid: miri
 name: Miri
-description: Miri is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Miri (Miri AI) is an AI-powered health and wellness engagement platform
+  based in Oakland, California, that helps digital health, telehealth, GLP-1 and medical
+  weight-loss, lab-diagnostics, and supplement companies increase patient retention
+  and lifetime value. Miri sits between clinical touchpoints as a daily AI companion
+  — logging meals via text or photo, tracking goals and body measurements, and running
+  coach check-ins — while a behavioral-intelligence layer surfaces at-risk users and
+  revenue opportunities. Developers embed Miri through a React Native Component SDK
+  and a server-side, API-key-authenticated API with configurable webhooks for events
+  such as meal logging, goal completion, profile updates, coach interactions, and push
+  notifications. The developer program is currently in alpha.
 url: https://raw.githubusercontent.com/api-evangelist/miri/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/694f2f5f5d150634df22024d/69969307b5f2e9ea4dedb518_Group%209725.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,15 +32,70 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Health
+- Wellness
+- Digital Health
+- Telehealth
+- Artificial Intelligence
+- Patient Engagement
+- Weight Loss
+- SDK
+- Webhooks
+apis:
+- name: Miri API
+  description: Server-side Miri API (API-key authenticated) plus the React Native Component
+    SDK for embedding Miri's chat, goal-tracking, measurement, and admin surfaces, with
+    configurable webhooks. Currently in alpha.
+  humanURL: https://www.miri.ai/developer/docs/alpha/main
+  baseURL: https://api.miri.health
+  properties:
+  - type: Documentation
+    url: https://www.miri.ai/developer/docs/alpha/main
+  - type: Authentication
+    url: authentication/miri-authentication.yml
+  - type: Webhooks
+    url: asyncapi/miri-webhooks.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/miri-domain-security.yml
 - type: Website
+  url: https://www.miri.ai
+- type: DeveloperPortal
+  url: https://www.miri.ai/developer/docs/alpha/main
+- type: Documentation
+  url: https://www.miri.ai/developer/docs/alpha/main
+- type: Portal
   url: https://miri.health
+- type: PrivacyPolicy
+  url: https://www.miri.ai/privacy
+- type: TermsOfService
+  url: https://www.miri.ai/terms
+- type: Support
+  url: mailto:support@miri.ai
+- type: Authentication
+  url: authentication/miri-authentication.yml
+- type: Webhooks
+  url: asyncapi/miri-webhooks.yml
+- type: Packages
+  url: packages/miri-packages.yml
+- type: SDKs
+  url: packages/miri-packages.yml
+- type: Components
+  url: components/miri-components.yml
+- type: Conventions
+  url: conventions/miri-conventions.yml
+- type: LLMsTxt
+  url: llms/miri-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1
