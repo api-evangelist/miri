@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.miri.ai/developer/docs/alpha/main
+loader:
+  name: Miri Component SDK (React Native)
+  platform: react-native
+  init: Wrap the app in the Miri context provider and initialize with the account API key.
+  docs: https://www.miri.ai/developer/docs/alpha/main
+families:
+- name: Chat
+  description: Embedded Miri AI chat / conversational companion surface.
+- name: Goals & Tracking
+  description: Goal-setting, goal tracking, and progress-summary components.
+- name: Meal Logging
+  description: Meal logging via text and photo.
+- name: Measurements
+  description: Body-measurement tracking (e.g. weight, circumference).
+- name: Admin
+  description: Admin interfaces for user management and program creation.
+coming_soon:
+- name: Activity Tracker
+- name: Coach Check-ins

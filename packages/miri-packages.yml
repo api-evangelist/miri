@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.miri.ai/developer/docs/alpha/main
+notes: >-
+  Miri publishes a first-party React Native Component SDK ("Miri Component SDK") for
+  embedding Miri into mobile applications. As of the alpha developer program it is
+  distributed through the Miri developer docs rather than a public package registry —
+  no npm/PyPI/etc. listing was found (searched npm registry 2026-07-20, not present).
+  Swift and Android SDKs are on the documented roadmap.
+packages:
+- language: javascript
+  framework: react-native
+  registry: none
+  name: Miri Component SDK
+  url: https://www.miri.ai/developer/docs/alpha/main
+  official: true
+  status: alpha
+  notes: React Native SDK providing Miri UI components; not yet published to a public registry.
+roadmap:
+- language: swift
+  status: planned
+- language: kotlin
+  framework: android
+  status: planned

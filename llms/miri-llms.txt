@@ -1,0 +1,27 @@
+# Miri
+
+> Miri (Miri AI) is an AI-powered health and wellness engagement platform based in Oakland, California. It sits between clinical touchpoints as a daily AI companion — logging meals via text or photo, tracking goals and body measurements, and running coach check-ins — while a behavioral-intelligence layer surfaces at-risk users and revenue opportunities for digital health, telehealth, GLP-1/medical weight-loss, lab-diagnostics, and supplement companies. Developers embed Miri through a React Native Component SDK and a server-side, API-key-authenticated API with configurable webhooks. The developer program is currently in alpha.
+
+## APIs
+
+- [Miri API](https://www.miri.ai/developer/docs/alpha/main): Server-side Miri API (API-key authenticated) plus the React Native Component SDK.
+
+## Docs
+
+- [Developer Portal / Documentation](https://www.miri.ai/developer/docs/alpha/main): SDK and API integration docs (alpha).
+- [Webhooks](https://www.miri.ai/developer/docs/alpha/webhooks): Event configuration, events, and handling.
+- [Privacy Policy](https://www.miri.ai/privacy)
+- [Terms of Use](https://www.miri.ai/terms)
+
+## Artifacts
+
+- [Authentication](authentication/miri-authentication.yml): API-key auth profile.
+- [Webhooks](asyncapi/miri-webhooks.yml): Event catalog and payload fields.
+- [Packages / SDK](packages/miri-packages.yml): React Native Component SDK.
+- [Components](components/miri-components.yml): Embeddable Miri UI components.
+- [Conventions](conventions/miri-conventions.yml): Cross-cutting request/response semantics.
+- [Domain Security](security/miri-domain-security.yml): TLS/HSTS/DNS posture.
+
+## Contact
+
+- Support: support@miri.ai

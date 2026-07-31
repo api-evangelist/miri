@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.miri.ai/developer/docs/alpha/main
+docs: https://www.miri.ai/developer/docs/alpha/main
+summary:
+  types:
+  - apiKey
+  notes: >-
+    Miri's developer program is in alpha. Server-side communication with the Miri API
+    uses a unique per-account API key (API_KEY) issued when a developer registers in
+    their Miri developer account. The React Native Component SDK is initialized with
+    the same key via its context provider. Webhooks are authenticated with API keys or
+    tokens per the integrator's security needs. No public OAuth or OpenID Connect flow
+    is documented at this alpha stage.
+schemes:
+- name: apiKey
+  type: apiKey
+  in: header
+  description: >-
+    Per-account API key (API_KEY) used for server-side calls to the Miri API and to
+    initialize the Miri Component SDK. Issued on developer-account registration.
+  sources:
+  - https://www.miri.ai/developer/docs/alpha/main

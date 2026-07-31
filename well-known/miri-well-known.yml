@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/ on Miri hosts (2026-07-20)
+host: https://www.miri.ai
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  No /.well-known discovery documents are published on www.miri.ai (all 404). The API
+  host api.miri.health did not respond to public HTTPS requests (connection not
+  established) during probing. Recorded as honest absence — no WellKnown/SecurityTxt
+  pointer wired.

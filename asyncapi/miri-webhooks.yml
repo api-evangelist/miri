@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.miri.ai/developer/docs/alpha/webhooks
+spec_type: Webhooks
+summary: >-
+  Miri delivers events to integrator-configured HTTP endpoints. Webhooks are set up in
+  the "Web Hooks" section of the Miri developer account by registering an endpoint URL
+  and selecting the events to receive. Miri POSTs a JSON payload; the endpoint must
+  respond with HTTP 200. Webhooks are authenticated with API keys or tokens depending
+  on the integrator's security needs. Developer program is in alpha.
+delivery:
+  transport: http
+  method: POST
+  content_type: application/json
+  ack: HTTP 200
+  authentication: API key or token (integrator-configured)
+  configuration_ui: Miri developer account -> "Web Hooks" section
+event_families:
+# Event families as documented on the webhooks page. Only the sample event identifier
+# ("goal_completed") is published verbatim; other concrete event ids are not documented.
+- name: Meal Log Updates
+- name: Goal Completion
+  sample_event: goal_completed
+- name: User Profile Updates
+- name: Coach Interaction
+- name: Push Notifications
+sample_payload:
+  documented_fields:
+  - event
+  - occurred_at
+  - user_id
+  - goal_artifact_id
+  - goal_name
+  - data

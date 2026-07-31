@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.miri.ai/developer/docs/alpha/main
+notes: >-
+  Cross-cutting semantics captured from the Miri alpha developer docs. Many conventions
+  (pagination, idempotency, versioning headers, rate-limit signaling, error envelope)
+  are not documented at this alpha stage and are recorded as null rather than invented.
+authentication:
+  style: api-key
+  detail: Per-account API key (API_KEY) in requests; see authentication/miri-authentication.yml
+idempotency: null
+pagination: null
+versioning:
+  scheme: path-alpha
+  detail: Developer docs are served under /developer/docs/alpha/; API is versioned as an alpha program.
+webhooks:
+  transport: http-post-json
+  ack: HTTP 200
+  detail: See asyncapi/miri-webhooks.yml for the event catalog and payload fields.
+error_handling:
+  documented: partial
+  detail: Webhook handlers must respond with HTTP 200; broader API error envelope not documented at alpha.
+rate_limiting: null
+request_tracing: null
+cross_links:
+  authentication: authentication/miri-authentication.yml
+  webhooks: asyncapi/miri-webhooks.yml
+  components: components/miri-components.yml
